@@ -1,0 +1,72 @@
+/* Reset default styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/*color schema*/
+/*:root represnt global settings*/
+:root{
+    --primary-color:rgb(250, 238, 224);
+    --secondary-color:rgb(104, 7, 5);
+    --acent-color:rgb(15, 0, 110);
+}
+.root {
+font-style: sherif;
+font-size:larger;
+background-color: var(--primary-color);
+font-style:oblique;
+text-align: center;
+}
+
+img{
+     display: block;
+    size: 130px;
+    width: 15%;
+    margin-left: auto;
+  margin-right: auto;
+  clip-path: circle(40%);
+}
+.link{
+    display: flex;
+    justify-content:space-around
+}
+.list{
+    display: flex;
+}
+
+
+h1{
+    color: var(--secondary-color);
+    font-style: normal;
+    text-align: center;
+}
+h2{
+    color: var(--secondary-color);
+    font-style: normal; 
+}
+.dark{
+    margin-left: auto;
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #ffb3b3;
+}
+
+body.dark-mode a {
+    color: #9b7cff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+}
+
+@media (min-width: 600px) {
+    .h1,h2 {grid-area: 1 / span 6;}
+}
